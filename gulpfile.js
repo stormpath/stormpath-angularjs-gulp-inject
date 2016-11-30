@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 $ = require('gulp-load-plugins')();
+var historyApiFallback = require('connect-history-api-fallback');
 
 gulp.task('clean', function () {
     return gulp.src('dist/')
@@ -24,7 +25,10 @@ gulp.task('dist', ['copy'], function () {
 gulp.task('serve', function() {
 
     browserSync.init({
-        server: './app'
+        server: {
+          baseDir: './app',
+          middleware: [ historyApiFallback() ]
+        }
     });
 
     gulp.watch(['app/**/*.js', 'app/**/*.css', 'app/**/*.html'])
