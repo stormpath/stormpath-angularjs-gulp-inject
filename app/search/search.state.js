@@ -1,18 +1,21 @@
 (function () {
-    'use strict';
+  'use strict';
 
-    angular.module('myApp')
-        .config(stateConfig);
+  angular.module('myApp')
+    .config(stateConfig);
 
-    stateConfig.$inject = ['$stateProvider'];
+  stateConfig.$inject = ['$stateProvider'];
 
-    function stateConfig($stateProvider) {
-        $stateProvider
-            .state('search', {
-                url: '/search',
-                templateUrl: 'search/search.html',
-                controller: 'SearchController',
-                controllerAs: 'vm'
-            });
-    }
+  function stateConfig($stateProvider) {
+    $stateProvider
+      .state('search', {
+        url: '/search',
+        templateUrl: 'search/search.html',
+        controller: 'SearchController',
+        controllerAs: 'vm',
+        data: {
+          authorities: ['admin']
+        }
+      });
+  }
 })();
