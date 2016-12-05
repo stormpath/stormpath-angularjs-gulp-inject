@@ -2,7 +2,7 @@
 
 This project is an example application for a typical [AngularJS](http://angularjs.org/) webapp with a [Spring Boot](https://projects.spring.io/spring-boot/) backend.
 
-You can read about how this application was created on [the Stormpath blog](https://stormpath.com/blog/angularjs-spring-boot-tips-and-tricks). Feel free to copy any code in this project for your own use in accordance with the [MIT license](LICENSE).
+You can read about how this application was created on [the Stormpath blog](https://stormpath.com/blog/angularjs-spring-boot-tips). Feel free to copy any code in this project for your own use in accordance with the [MIT license](LICENSE).
 
 Through this project's commit logs, it shows you how to:
 
