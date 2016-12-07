@@ -8,13 +8,16 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- build:css css/seed.min.css -->
+  <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <!-- endinject -->
+  <!-- inject:css -->
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/app2.css">
+  <!-- endinject -->
   <!-- endbuild -->
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
   <ul class="menu">
@@ -34,25 +37,33 @@
   <div>Angular seed app: v<span app-version></span></div>
 
   <!-- build:js js/seed.min.js -->
+  <!-- bower:js -->
   <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-loader/angular-loader.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.min.js"></script>
   <script src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.tpls.min.js"></script>
-  <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
   <script src="view2/view2.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="app.js"></script>
   <script src="search/search.state.js"></script>
-  <script src="search/search.controller.js"></script>
   <script src="search/search.service.js"></script>
+  <script src="search/search.controller.js"></script>
+  <script src="register/register.state.js"></script>
+  <script src="login/login.state.js"></script>
+  <script src="forgot/forgot.state.js"></script>
   <script src="edit/edit.state.js"></script>
   <script src="edit/edit.controller.js"></script>
-  <script src="login/login.state.js"></script>
-  <script src="register/register.state.js"></script>
-  <script src="forgot/forgot.state.js"></script>
-  <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
+  <script src="components/version/version.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <!-- endinject -->
   <!-- endbuild -->
 </body>
 </html>
