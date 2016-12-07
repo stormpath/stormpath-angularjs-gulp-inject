@@ -7,4 +7,5 @@ tmp
 .tmp/
 .DS_Store
 .idea
+*.iml
 yarn.lock
